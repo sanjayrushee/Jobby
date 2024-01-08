@@ -1,0 +1,201 @@
+.background {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  align-content: none;
+}
+.search-bar {
+  width: 98%;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.search-input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  padding: 4px 4px 4px 15px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #f1f5f9;
+  cursor: pointer;
+  outline: none;
+}
+.search-button {
+  width: 13%;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.search-icon {
+  color: #f1f5f9;
+  width: 18px;
+  height: 18px;
+}
+.TypeAndRadio-container {
+  color: white;
+  min-width: 80vw;
+}
+.userContainer {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  padding: 14px;
+  color: #000;
+  font-family: 'Roboto';
+  border-radius: 8px;
+}
+
+.jobItemContainer {
+  padding: 5px 10px 5px 10px;
+}
+.user-img {
+  height: 60px;
+}
+.user-heading {
+  font-size: 20px;
+  color: #6366f1;
+}
+.short-bio {
+  color: #2c364c;
+}
+.headingForType {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px;
+}
+.ulForTypeSelection {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+}
+.listItemForTypeSelection {
+  padding: 5px 5px 5px 10px;
+}
+@media screen and (min-width: 768px) {
+  .background {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .search-bar {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+  }
+
+  .search-input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    padding: 4px 4px 4px 15px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #f1f5f9;
+    cursor: pointer;
+    outline: none;
+  }
+  .search-button {
+    width: 13%;
+    background-color: #272727;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  .search-icon {
+    color: #f1f5f9;
+    width: 20px;
+    height: 20px;
+  }
+  .TypeAndRadio-container {
+    color: white;
+    min-width: 25vw;
+    padding-left: 10px;
+  }
+  .failView-background {
+    margin: 100px;
+  }
+}
+.failUserContainer {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.UserRetryBtn {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #f1f5f9;
+  padding: 9px;
+  width: 80px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #6366f1;
+}
+
+.failView-background {
+  color: #fff;
+  text-align: center;
+}
+.fail-para {
+  min-width: 100px;
+}
+.fail-retry {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding: 10px;
+  width: 90px;
+  background-color: #6366f1;
+  border: 0px;
+  border-radius: 6px;
+}
+.no-jobs-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+
+  width: 80%;
+  margin: auto;
+}
+.no-jobs-image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.no-jobs-heading {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.no-jobs-description {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
