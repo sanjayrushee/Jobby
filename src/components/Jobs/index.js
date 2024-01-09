@@ -170,11 +170,11 @@ class Jobs extends Component {
     this.setState({salaryId: event.target.id}, this.getCompanyDetails)
   }
 
-  renderLoader = () => {
-    ;<div className="profile-loader-container" data-testid="loader">
+  renderLoader = () => (
+    <div className="profile-loader-container" data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
-  }
+  )
 
   renderFailViewForJobDetails = () => (
     <div className="failView-background">
@@ -214,7 +214,7 @@ class Jobs extends Component {
     const {name, profileImageUrl, shortBio} = userDetails
     return (
       <div className="userContainer">
-        <img src={profileImageUrl} alt={name} className="user-img" />
+        <img src={profileImageUrl} alt="profile" className="user-img" />
         <h1 className="user-heading">{name}</h1>
         <p className="short-bio">{shortBio}</p>
       </div>

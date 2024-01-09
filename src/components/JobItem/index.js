@@ -37,13 +37,13 @@ const JobItem = props => {
         <div className="location-package-container-card">
           <div className="icon-type-container-card">
             <IoLocationSharp className="type-icon" />
-            <p className="type-text">{location}</p>
+            <p className="LocationText">{location}</p>
           </div>
           <div className="icon-type-container-card">
             <BsFillBriefcaseFill className="type-icon" />
-            <p className="type-text">{employmentType}</p>
+            <p className="EmText">{employmentType}</p>
           </div>
-          <p className="package-text">{packagePreAnnum}</p>
+          <p className="packagePreAnnum">{packagePreAnnum}</p>
         </div>
         <div>
           <hr className="separator" />

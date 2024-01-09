@@ -13,6 +13,8 @@
 @media screen and (min-width: 768px) {
   .job-card {
     width: 90%;
+    margin-left: 50px;
+    padding: 50px;
   }
 }
 .job-card-link {
@@ -85,7 +87,12 @@
   font-family: 'Roboto';
   color: #f8fafc;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .package-text {
+    font-size: 20px;
+  }
 }
 .description-heading-card {
   margin: 0;
@@ -133,10 +140,13 @@
   font-size: 14px;
   font-weight: 600;
   padding: 5px;
+  padding-left: 0px;
 }
 .similar-job-ul {
   padding: 0px;
   list-style: none;
+  margin-left: 30px;
+  padding: 20px;
 }
 @media screen and (min-width: 769px) {
   .similar-job-ul {
@@ -159,6 +169,10 @@
   color: #fff;
   font-family: 'Roboto';
 }
+.similar-jobs-heading {
+  color: #fff;
+  font-size: 25px;
+}
 .similar-job-heading-container {
   /*border: 1px solid black; */
   text-align: center;
@@ -170,10 +184,47 @@
   /* border: 1px solid yellowgreen; */
 }
 .similar-job-title {
-  font-size: 25px;
+  font-size: 18px;
   margin-bottom: 6px;
   margin-top: 0px;
 }
+@media screen and (min-width: 768px) {
+  .similar-job-title {
+    font-size: 25px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+  }
+  .similar-jobs-heading {
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+.description-link {
+  display: flex;
+  justify-content: space-between;
+}
+.company-link {
+  font-family: 'Roboto';
+  color: #b6c5ff;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.external-link-logo {
+  margin-left: 4px;
+}
+@media screen and (min-width: 768px) {
+  .lifeAtCompanyContainer {
+    display: flex;
+    margin-left: 0px;
+  }
+  .lifeAtCompanyHeadingAndPara {
+    width: 60%;
+  }
+}
+
 .profile-loader-container {
   height: 100vh;
   display: flex;
@@ -218,7 +269,8 @@
 }
 @media screen and (min-width: 768px) {
   .lifeAtCompanyUrl {
-    width: 45%;
+    min-width: 110%;
     height: 200px;
+    padding-left: 30px;
   }
 }

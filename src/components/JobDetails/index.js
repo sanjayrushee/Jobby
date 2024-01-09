@@ -135,13 +135,13 @@ class JobDetails extends Component {
           <div>
             <hr className="separator" />
           </div>
-          <div>
+          <div className="description-link">
             <link rel="stylesheet" href="https://www.google.com" />
             <h1 className="description-heading-card">Description</h1>
             <a href={companyWebsiteUrl} className="company-link">
               Visit
-              <FiExternalLink className="external-link-logo" />
-            </a>{' '}
+              <FiExternalLink className="external-link-logo" />{' '}
+            </a>
           </div>
           <p className="job-description-card">{jobDescription}</p>
           <h1 className="headingForSkillAndChange">Skills</h1>
@@ -157,17 +157,24 @@ class JobDetails extends Component {
               )
             })}
           </ul>
-          <h1 className="headingForSkillAndChange">Life at Company</h1>
-          <p className="lifeAtCompanyPara">{lifeAtCompany.description}</p>
-          <img
-            src={lifeAtCompany.imageUrl}
-            alt="life at company"
-            className="lifeAtCompanyUrl"
-          />
+          <div className="lifeAtCompanyContainer">
+            <div className="lifeAtCompanyHeadingAndPara">
+              <h1 className="headingForSkillAndChange">Life at Company</h1>
+              <p className="lifeAtCompanyPara">{lifeAtCompany.description}</p>
+            </div>
+
+            <div>
+              <img
+                src={lifeAtCompany.imageUrl}
+                alt="life at company"
+                className="lifeAtCompanyUrl"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="similar-jobs-container">
-          <h1>Similar Jobs</h1>
+          <h1 className="similar-jobs-heading">Similar Jobs</h1>
           <ul className="similar-job-ul">
             {similarJobs.map(eachItems => (
               <li key={eachItems.id} className="similar-job-list">
@@ -205,11 +212,11 @@ class JobDetails extends Component {
     )
   }
 
-  renderLoader = () => {
-    ;<div className="profile-loader-container" data-testid="loader">
+  renderLoader = () => (
+    <div className="profile-loader-container" data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
-  }
+  )
 
   renderFailView = () => (
     <div className="failView-background">

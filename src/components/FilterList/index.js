@@ -1,3 +1,5 @@
+import './index.css'
+
 const FilterList = props => {
   const {employmentDetais, updateFileterJobId} = props
   const {label, employmentTypeId} = employmentDetais
@@ -5,8 +7,13 @@ const FilterList = props => {
     updateFileterJobId(employmentTypeId)
   }
   return (
-    <li>
-      <input type="checkbox" id={label} onChange={onChagneupdateCheckbox} />
+    <li className="listForCheckbox">
+      <input
+        type="checkbox"
+        id={label}
+        onChange={onChagneupdateCheckbox}
+        values="label"
+      />
       <label htmlFor={label}>{employmentTypeId}</label>
     </li>
   )

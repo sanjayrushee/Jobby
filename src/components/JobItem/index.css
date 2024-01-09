@@ -51,8 +51,7 @@
 }
 .location-package-container-card {
   display: flex;
-  align-items: center;
-  gap: 18px;
+  width: 100%;
 }
 .icon-type-container-card {
   display: flex;
@@ -63,6 +62,7 @@
   color: #ffffff;
   width: 18px;
   height: 18px;
+  margin-right: 2px;
 }
 .type-text {
   margin: 0;
@@ -96,4 +96,39 @@
 }
 .separator {
   color: #ffffff;
+}
+.EmText,
+.LocationText {
+  font-size: 13px;
+  margin: auto;
+  padding: auto;
+  font-family: 'Roboto';
+  color: #f8fafc;
+  font-weight: 400;
+}
+.packagePreAnnum {
+  padding-right: 0px;
+  font-size: 13px;
+  font-family: 'Roboto';
+  color: #f8fafc;
+}
+@media screen and (min-width: 768px) {
+  .EmText,
+  .LocationText {
+    font-size: 17px;
+    margin: auto;
+    padding: auto;
+    font-family: 'Roboto';
+    color: #f8fafc;
+    font-weight: 400;
+  }
+  .packagePreAnnum {
+    padding-right: 0px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    color: #f8fafc;
+    text-align: end;
+    margin-left: auto;
+    margin-right: 9px;
+  }
 }
