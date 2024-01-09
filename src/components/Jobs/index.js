@@ -93,18 +93,19 @@ class Jobs extends Component {
       },
     }
     const response = await fetch(url, options)
-    const data = await response.json()
-    const updateDataJobs = data.jobs.map(eachData => ({
-      companyLogoUrl: eachData.company_logo_url,
-      employmentType: eachData.employment_type,
-      id: eachData.id,
-      jobDescription: eachData.job_description,
-      location: eachData.location,
-      packagePreAnnum: eachData.package_per_annum,
-      rating: eachData.rating,
-      title: eachData.title,
-    }))
+
     if (response.ok) {
+      const data = await response.json()
+      const updateDataJobs = data.jobs.map(eachData => ({
+        companyLogoUrl: eachData.company_logo_url,
+        employmentType: eachData.employment_type,
+        id: eachData.id,
+        jobDescription: eachData.job_description,
+        location: eachData.location,
+        packagePreAnnum: eachData.package_per_annum,
+        rating: eachData.rating,
+        title: eachData.title,
+      }))
       this.setState({
         companyDetails: updateDataJobs,
         apiStatusForJOb: stateOfContainer.success,
@@ -127,13 +128,14 @@ class Jobs extends Component {
       },
     }
     const response = await fetch(url, options)
-    const data = await response.json()
-    const updateUserList = {
-      name: data.profile_details.name,
-      profileImageUrl: data.profile_details.profile_image_url,
-      shortBio: data.profile_details.short_bio,
-    }
+
     if (response.ok) {
+      const data = await response.json()
+      const updateUserList = {
+        name: data.profile_details.name,
+        profileImageUrl: data.profile_details.profile_image_url,
+        shortBio: data.profile_details.short_bio,
+      }
       this.setState({
         userDetails: updateUserList,
         apiStatusForUser: stateOfContainer.success,
